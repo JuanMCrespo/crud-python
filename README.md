@@ -1,6 +1,6 @@
 # CRUD Clientes - Juan M. Crespo
 
-Sistema de gestión de clientes desarrollado en Python con SQLite como base de datos y Tkinter para la interfaz gráfica.
+Sistema de gestión de clientes desarrollado en Python con SQLite (BD) y Tkinter(interfaz gráfica).
 
 ---
 
@@ -22,15 +22,30 @@ crud_python/
 ## Librerias utilizadas
 
 - Python 3.x
-- SQLite3 (incluido en Python)
-- Tkinter (incluido en Python)
-- Pillow (para la imagen de fondo)
+- SQLite3 
+- Tkinter 
+- Pillow
 
-### Instalación de Pillow
+## Interfaz gráfica
 
-```bash
-pip install Pillow
+Construida con Tkinter. Estructura de la ventana principal:
+
 ```
+╔═══════════════════════════════════════════════╗
+║              GESTIÓN DE CLIENTES              ║
+╠═══════════╦═══════════════════════════════════╣
+║           ║                                   ║
+║ Agregar   ║                                   ║
+║ Listar    ║        Área de contenido          ║
+║ Buscar    ║        (imagen de fondo)          ║
+║ Actualizar║                                   ║
+║ Eliminar  ║                                   ║
+║           ║                                   ║
+╚═══════════╩═══════════════════════════════════╝
+```
+
+- **Panel izquierdo** → botones de navegación
+- **Panel derecho** → área de contenido con imagen de fondo, donde se muestran formularios y resultados según la operación seleccionada
 
 ---
 
@@ -63,20 +78,20 @@ pip install Pillow
 
 ## Descripción de archivos
 
+### `main.py`
+Punto de entrada del programa. Llama a `crear_tablas()` e inicia la interfaz.
+
 ### `conexion.py`
-Contiene la clase `Conexion` con el método estático `conexionBD()` que establece y retorna la conexión a la base de datos SQLite.
+Contiene la clase `Conexion` con el método estático `conexionBD()` que establece la conexión a la base de datos.
 
 ### `init_db.py`
-Contiene la función `crear_tablas()` que crea la tabla `cliente` si no existe. Se ejecuta al iniciar el programa.
+Se ejecuta al iniciar el programa. Contiene la función `crear_tablas()` que crea la tabla `cliente` si no existe.
 
 ### `cliente.py`
 Contiene la clase `Clientes` con los atributos del cliente y todos los métodos CRUD.
 
 ### `interfaz.py`
-Contiene la clase `Aplicacion` con toda la interfaz gráfica construida con Tkinter.
-
-### `main.py`
-Punto de entrada del programa. Llama a `crear_tablas()` e inicia la interfaz.
+Contiene la interfaz gráfica con la clase `Aplicacion`
 
 ---
 
@@ -142,35 +157,8 @@ Clientes.eliminar("nombre", "Juan")
 
 ---
 
-## Interfaz gráfica
-
-Construida con Tkinter. Estructura de la ventana principal:
-
-```
-╔═══════════════════════════════════════════════╗
-║              GESTIÓN DE CLIENTES              ║
-╠═══════════╦═══════════════════════════════════╣
-║           ║                                   ║
-║ Agregar   ║                                   ║
-║ Listar    ║        Área de contenido          ║
-║ Buscar    ║        (imagen de fondo)          ║
-║ Actualizar║                                   ║
-║ Eliminar  ║                                   ║
-║           ║                                   ║
-╚═══════════╩═══════════════════════════════════╝
-```
-
-- **Panel izquierdo** → botones de navegación
-- **Panel derecho** → área de contenido con imagen de fondo, donde se muestran formularios y resultados según la operación seleccionada
-
----
-
-## Cómo ejecutar
+## Ejecutar el programa
 
 ```bash
 python3 main.py
 ```
-
----
-
-*Proyecto Crud PythonJuan M. Crespo — 2026*
