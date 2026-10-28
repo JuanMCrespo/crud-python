@@ -4,7 +4,6 @@
 # 23/02/2026
 
 from init_db import crear_tablas
-# from cliente import Clientes
 from interfaz import Aplicacion
 
 

@@ -1,10 +1,10 @@
-# 📋 CRUD Clientes - Juan M. Crespo
+# CRUD Clientes - Juan M. Crespo
 
 Sistema de gestión de clientes desarrollado en Python con SQLite como base de datos y Tkinter para la interfaz gráfica.
 
 ---
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 crud_python/
@@ -19,7 +19,7 @@ crud_python/
 
 ---
 
-## ⚙️ Requisitos
+## Librerias utilizadas
 
 - Python 3.x
 - SQLite3 (incluido en Python)
@@ -34,7 +34,7 @@ pip install Pillow
 
 ---
 
-## 🗃️ Base de datos
+## Base de datos
 
 **Archivo:** `clientesBD.db`  
 **Tabla:** `cliente`
@@ -61,7 +61,7 @@ pip install Pillow
 
 ---
 
-## 📂 Descripción de archivos
+## Descripción de archivos
 
 ### `conexion.py`
 Contiene la clase `Conexion` con el método estático `conexionBD()` que establece y retorna la conexión a la base de datos SQLite.
@@ -80,7 +80,7 @@ Punto de entrada del programa. Llama a `crear_tablas()` e inicia la interfaz.
 
 ---
 
-## 🔧 Métodos de la clase `Clientes`
+## Métodos de la clase `Clientes`
 
 ### `__init__()`
 Inicializa un objeto Cliente con todos sus atributos:
@@ -142,22 +142,22 @@ Clientes.eliminar("nombre", "Juan")
 
 ---
 
-## 🖥️ Interfaz gráfica
+## Interfaz gráfica
 
 Construida con Tkinter. Estructura de la ventana principal:
 
 ```
-╔══════════════════════════════════════════════╗
-║           GESTIÓN DE CLIENTES                ║
-╠══════════╦═══════════════════════════════════╣
-║          ║                                   ║
-║ Agregar  ║                                   ║
-║ Listar   ║        Área de contenido          ║
-║ Buscar   ║        (imagen de fondo)          ║
-║ Actualizar║                                  ║
-║ Eliminar ║                                   ║
-║          ║                                   ║
-╚══════════╩═══════════════════════════════════╝
+╔═══════════════════════════════════════════════╗
+║              GESTIÓN DE CLIENTES              ║
+╠═══════════╦═══════════════════════════════════╣
+║           ║                                   ║
+║ Agregar   ║                                   ║
+║ Listar    ║        Área de contenido          ║
+║ Buscar    ║        (imagen de fondo)          ║
+║ Actualizar║                                   ║
+║ Eliminar  ║                                   ║
+║           ║                                   ║
+╚═══════════╩═══════════════════════════════════╝
 ```
 
 - **Panel izquierdo** → botones de navegación
@@ -165,7 +165,7 @@ Construida con Tkinter. Estructura de la ventana principal:
 
 ---
 
-## 🚀 Cómo ejecutar
+## Cómo ejecutar
 
 ```bash
 python3 main.py
@@ -173,4 +173,4 @@ python3 main.py
 
 ---
 
-*Proyecto desarrollado con fines educativos — Juan M. Crespo — 2026*
+*Proyecto Crud PythonJuan M. Crespo — 2026*
