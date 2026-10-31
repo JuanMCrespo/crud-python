@@ -69,8 +69,6 @@ Construida con Tkinter. Estructura de la ventana principal:
 | cuit         | TEXT    | UNIQUE                                 | CUIT (obligatorio si es Empresa, validado desde Python)  |
 | razon_social | TEXT    |                                        | Razón social (obligatoria si es Empresa)                 |
 
-### Reglas de negocio
-
 - El **DNI** es obligatorio para todos los clientes (Particular y Empresa).
 - El **CUIT** y la **razón social** son obligatorios solo si `tipo_cliente = "Empresa"`. Esta validación se realiza desde Python, no desde la base de datos.
 
