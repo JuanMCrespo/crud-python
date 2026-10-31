@@ -57,7 +57,7 @@ Construida con Tkinter. Estructura de la ventana principal:
 | Campo        | Tipo    | Restricciones                          | Descripción                                              |
 |--------------|---------|----------------------------------------|----------------------------------------------------------|
 | id_cliente   | INTEGER | PRIMARY KEY AUTOINCREMENT              | Identificador único del cliente                          |
-| tipo_cliente | TEXT    | NOT NULL, CHECK (Particular/Empresa)   | Tipo de cliente                                          |
+| tipo_cliente | TEXT    | NOT NULL, CHECK (tipo_cliente IN ('Particular','Empresa'))   | Tipo de cliente                                          |
 | dni          | TEXT    | NOT NULL, UNIQUE                       | Número de documento (obligatorio siempre)                |
 | nombre       | TEXT    | NOT NULL                               | Nombre de la persona de contacto                         |
 | apellido     | TEXT    | NOT NULL                               | Apellido de la persona de contacto                       |
